@@ -14,7 +14,7 @@
 ================================================================== */
 
 html {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Times", "Avenir", Helvetica, serif, sans-serif;
   font-size: var(--normal);
   color: var(--text-color);
 }

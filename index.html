@@ -5,8 +5,18 @@
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
-<html lang="en" class="no-js">
+<html lang="en" class="no-js" >
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154771635-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-154771635-1');
+    </script>
+
     <meta charset="utf-8">
     <title>shinji's website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +25,7 @@
     </script>
     <!-- For all browsers -->
     <link rel="stylesheet" href="/css/minimal-mistakes.css">
+
     <!--[if IE ]>
       <style>
         /* old IE unsupported flexbox fixes */
@@ -44,8 +55,8 @@
           <li class="masthead__menu-item"><a href="/profile" >About Me</a></li>
           <li class="masthead__menu-item"><a href="/research" >Research</a></li>
           <li class="masthead__menu-item"><a href="/publications" >Publications</a></li>
+          <!--- <li class="masthead__menu-item"><a href="/notes" >Notes</a></li> -->
           <!-- <li class="masthead__menu-item"><a href="/lecture" >Seminar/Lecture</a></li> -->
-          <!-- <li class="masthead__menu-item"><a href="/notes" >Notes</a></li> -->
         </ul>
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">Toggle menu</span>
@@ -77,7 +88,7 @@
             <div class="archive__item">
               <div class="archive__item-teaser">
 
-                <div style="width: 200px; height: auto">
+                <div style="width: 200px; height: auto" >
                   <img src="/assets/akazukin.svg" alt="customizable">
                 </div>
 
