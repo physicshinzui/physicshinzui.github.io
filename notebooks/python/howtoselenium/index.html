@@ -31,7 +31,7 @@
 </style>
 <![endif]-->
 
-   <title>How to use selenium</title>  
+   <title>Automate web scraping with selenium</title>  
   <!-- end custom head snippets -->
 </head>
 <body class="layout--single">
@@ -44,8 +44,8 @@
           <li class="masthead__menu-item"><a href="/profile" >About Me</a></li>
           <li class="masthead__menu-item"><a href="/research" >Research</a></li>
           <li class="masthead__menu-item"><a href="/publications" >Publications</a></li>
-          <!-- <li class="masthead__menu-item"><a href="/lecture" >Seminar/Lecture</a></li> -->
           <!-- <li class="masthead__menu-item"><a href="/notes" >Notes</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="/lecture" >Seminar/Lecture</a></li> -->
         </ul>
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">Toggle menu</span>
@@ -62,7 +62,8 @@
       <div class="sidebar sticky">
         <div itemscope itemtype="https://schema.org/Person">
           <div class="author__avatar">
-            <img src="/assets/me.jpeg" alt="siida" itemprop="image">
+            <!-- <img src="/assets/me.jpeg" alt="siida" itemprop="image"> -->
+            <img src="/assets/me_sherlock1mb.jpeg" alt="siida" itemprop="image">
           </div>
           <div class="author__content">
             <h3 class="author__name" itemprop="name">Shinji Iida</h3>
@@ -72,19 +73,20 @@
             <button class="btn btn--inverse">Follow</button>
             <ul class="author__urls social-icons">
               <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
-                <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Japan</span></li>
+                <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Tokyo, Japan</span></li>
               <li><a href="https://github.com/physicshinzui" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
-              <li><a href="https://scholar.google.co.jp/citations?user=p09KwG8AAAAJ&hl=en" rel="nofollow noopener noreferrer"><img src="/assets/google-scholar.png" alt="gscholar" style="width: 1vw; min-width: 10px;"></i> Google Scholar</a></li>
+              <li><a href="https://scholar.google.co.jp/citations?user=p09KwG8AAAAJ&hl=en" rel="nofollow noopener noreferrer"><img src="/assets/google-scholar.png" alt="gscholar" style="width: 1vw; min-width: 15px;"></i> Google Scholar</a></li>
+              <li><a href="https://twitter.com/_siida_" rel="nofollow noopener noreferrer"><img src="/assets/icons8-twitter.svg" alt="twitter" style="width: 1vw; min-width: 20px;"></i> Twitter </a></li>
+              <li><a href="https://hub.docker.com/u/shinjiiida" rel="nofollow noopener noreferrer"><img src="/assets/Moby-logo.png" alt="docker" style="width: 1vw; min-width: 20px;"></i> DockerHub </a></li>
+
             </ul>
           </div>
         </div>
       </div>
 
-
 <!-- Content appended here -->
-<div class="franklin-content"><h1 id="how_to_use_selenium"><a href="#how_to_use_selenium" class="header-anchor">How to use selenium</a></h1>
+<div class="franklin-content"><h1 id="automate_web_scraping_with_selenium"><a href="#automate_web_scraping_with_selenium" class="header-anchor">Automate web scraping with selenium</a></h1>
 <div class="franklin-toc"><ol><li><a href="#install_selenium">Install selenium</a></li><li><a href="#download_driver">Download driver</a><ol><li><a href="#chrome">Chrome</a></li><li><a href="#firefox">Firefox</a></li><li><a href="#check_if_the_driver_works">Check if the driver works</a></li></ol></li><li><a href="#to_get_started">To get started</a><ol><li><a href="#search_on_google">Search on google</a></li><li><a href="#upload_a_file">Upload a file </a></li><li><a href="#main_methods">Main methods</a></li><li><a href="#headless_mode">Headless mode</a></li><li><a href="#automate_swissparam_generate_a_ligand_parameter">Automate Swissparam: Generate a ligand parameter</a></li><li><a href="#automate_charmm-gui_generate_a_ligand_pdb_with_hydrogens">Automate CHARMM-GUI: Generate a ligand PDB with hydrogens</a></li><li><a href="#how_to_get_xpath_from_firefox">How to get XPath from Firefox</a></li></ol></li></ol></div>
-<h1 id="aim_web_scraiping"><a href="#aim_web_scraiping" class="header-anchor">Aim : web scraiping </a></h1>
 <h2 id="install_selenium"><a href="#install_selenium" class="header-anchor">Install selenium</a></h2>
 <pre><code class="language-shell">conda install -c conda-forge selenium</code></pre>
 <h2 id="download_driver"><a href="#download_driver" class="header-anchor">Download driver</a></h2>
@@ -186,10 +188,10 @@ driver &#61; webdriver.Firefox&#40;executable_path&#61;&#39;/Users/siida/Documen
 driver.get&#40;&#39;https://www.charmm-gui.org/?doc&#61;input/ligandrm&#39;&#41;
 
 search_bar &#61; driver.find_element_by_id&#40;&quot;email&quot;&#41;
-search_bar.send_keys&#40;&quot;s-iida@aist.go.jp&quot;&#41;
+search_bar.send_keys&#40;&quot;EMAILADRESS&quot;&#41; #&lt;- replace
 
 search_bar &#61; driver.find_element_by_id&#40;&quot;password&quot;&#41;
-search_bar.send_keys&#40;&quot;&#33;z&#37;JMkSbxCG&amp;&quot;&#41;
+search_bar.send_keys&#40;&quot;PASSWORD&quot;&#41; #&lt;- replace
 
 search_bar.submit&#40;&#41;
 
@@ -205,7 +207,8 @@ Step 2 : Pick an element from the page
 Step 3 : Right Click on highlighted html -&gt; Copy -&gt; Xpath</code></pre>
 <div class="page-foot">
   <div class="copyright">
-    &copy; Shinji Iida. Last modified: December 15, 2021. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
+    <!-- &copy; {{ fill author }}. {{isnotpage /tag/*}}Last modified: {{ fill fd_mtime }}.{{end}} -->
+    Written by Shinji Iida. Last modified: March 10, 2022
   </div>
 </div>
 </div><!-- CONTENT ENDS HERE -->
@@ -220,12 +223,13 @@ Step 3 : Right Click on highlighted html -&gt; Copy -&gt; Xpath</code></pre>
 
           <a href="https://scholar.google.co.jp/citations?user=p09KwG8AAAAJ&hl=en" rel="nofollow noopener noreferrer">
             <img src="/assets/google-scholar.png" alt="gscholar" style="width: 1vw; min-width: 10px;"> 
-            My page on Google Scholar.
+            Google Scholar.
           </a>
 
           <h>
             Email: s-iida[at]protein.osaka-u.ac.jp.
           </h>
+
 
           <a href="https://github.com/tlienart/Franklin.jl">
             Powered by 

@@ -4098,6 +4098,14 @@ a.reversefootnote:hover {
   position: relative;
 }
 
+/* shinji added */
+.archive__item_flex {
+  display: flex; align-items: center; flex-direction: column;
+}
+.archive__item-btn {
+  text-align: center;
+}
+
 .archive__subtitle {
   margin: 1.414em 0 0;
   padding-bottom: 0.5em;
@@ -4116,6 +4124,7 @@ a.reversefootnote:hover {
   line-height: initial;
   overflow: hidden;
   text-overflow: ellipsis;
+  text-align: center
 }
 
 .archive__item-title a[rel="permalink"]::before {
@@ -4293,7 +4302,7 @@ a.reversefootnote:hover {
 .feature__wrapper {
   clear: both;
   margin-bottom: 2em;
-  border-bottom: 1px solid #f2f3f3;
+  /* border-bottom: 1px solid #f2f3f3; */
 }
 
 .feature__wrapper::after {
@@ -4535,14 +4544,14 @@ a.reversefootnote:hover {
   .sidebar {
     float: left;
     width: calc(200px - 1em);
-    opacity: 0.75;
+    /* opacity: 1.0; */
     -webkit-transition: opacity 0.2s ease-in-out;
     transition: opacity 0.2s ease-in-out;
   }
 
-  .sidebar:hover {
-    opacity: 1;
-  }
+  /* .sidebar:hover {
+    opacity: 10;
+  } */
 
   .sidebar.sticky {
     overflow-y: auto;
@@ -4653,8 +4662,8 @@ a.reversefootnote:hover {
 }
 
 .author__avatar img {
-  max-width: 110px;
-  border-radius: 50%;
+  min-width: 100%;
+  border-radius: 80%;
 }
 
 @media (min-width: 64em) {

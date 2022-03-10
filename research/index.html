@@ -43,8 +43,8 @@
           <li class="masthead__menu-item"><a href="/profile" >About Me</a></li>
           <li class="masthead__menu-item"><a href="/research" >Research</a></li>
           <li class="masthead__menu-item"><a href="/publications" >Publications</a></li>
-          <!-- <li class="masthead__menu-item"><a href="/lecture" >Seminar/Lecture</a></li> -->
           <!-- <li class="masthead__menu-item"><a href="/notes" >Notes</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="/lecture" >Seminar/Lecture</a></li> -->
         </ul>
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">Toggle menu</span>
@@ -61,7 +61,8 @@
       <div class="sidebar sticky">
         <div itemscope itemtype="https://schema.org/Person">
           <div class="author__avatar">
-            <img src="/assets/me.jpeg" alt="siida" itemprop="image">
+            <!-- <img src="/assets/me.jpeg" alt="siida" itemprop="image"> -->
+            <img src="/assets/me_sherlock1mb.jpeg" alt="siida" itemprop="image">
           </div>
           <div class="author__content">
             <h3 class="author__name" itemprop="name">Shinji Iida</h3>
@@ -71,14 +72,16 @@
             <button class="btn btn--inverse">Follow</button>
             <ul class="author__urls social-icons">
               <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
-                <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Japan</span></li>
+                <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Tokyo, Japan</span></li>
               <li><a href="https://github.com/physicshinzui" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
-              <li><a href="https://scholar.google.co.jp/citations?user=p09KwG8AAAAJ&hl=en" rel="nofollow noopener noreferrer"><img src="/assets/google-scholar.png" alt="gscholar" style="width: 1vw; min-width: 10px;"></i> Google Scholar</a></li>
+              <li><a href="https://scholar.google.co.jp/citations?user=p09KwG8AAAAJ&hl=en" rel="nofollow noopener noreferrer"><img src="/assets/google-scholar.png" alt="gscholar" style="width: 1vw; min-width: 15px;"></i> Google Scholar</a></li>
+              <li><a href="https://twitter.com/_siida_" rel="nofollow noopener noreferrer"><img src="/assets/icons8-twitter.svg" alt="twitter" style="width: 1vw; min-width: 20px;"></i> Twitter </a></li>
+              <li><a href="https://hub.docker.com/u/shinjiiida" rel="nofollow noopener noreferrer"><img src="/assets/Moby-logo.png" alt="docker" style="width: 1vw; min-width: 20px;"></i> DockerHub </a></li>
+
             </ul>
           </div>
         </div>
       </div>
-
 
 <!-- Content appended here -->
 <div class="franklin-content"><h1 id="research"><a href="#research" class="header-anchor">Research</a></h1>
@@ -86,7 +89,7 @@
 <p>I am eager to understand how biomolecules work in life.  To pursue this, I apply computer simulation techniques, such as molecular dynamics simulation.  Computer simulation allows us to address complicated biological phenomena through a simple physical model &#40;e.g., one protein and one substrate&#41;.  This simplification can be an effective way to figure out what aspects are essential in the phenomena.</p>
 <p>Recently, I have studied the following topics: </p>
 <h2 id="cryptic_binding_site_of_proteins"><a href="#cryptic_binding_site_of_proteins" class="header-anchor">Cryptic Binding Site of Proteins</a></h2>
-<p>Cryptic binding sites are binding sites that are transiently formed in an apo form or that are induced by ligand binding. In our study^1^, we have investigated 18 proteins with a known crytptic binding site via all-atom molecular dynamics simulations. Our findings are: </p>
+<p>Cryptic binding sites are binding sites that are transiently formed in an apo form or that are induced by ligand binding. In our study<sup id="fnref:1"><a href="#fndef:1" class="fnref">[1]</a></sup>, we have investigated 18 proteins with a known crytptic binding site via all-atom molecular dynamics simulations. Our findings are: </p>
 <ul>
 <li><p>Aromatic amino-acid residues are ubiquitous in cryptic binding sites.</p>
 </li>
@@ -96,17 +99,25 @@
 </li>
 </ul>
 <h2 id="intrinsically_disordererd_proteins"><a href="#intrinsically_disordererd_proteins" class="header-anchor">Intrinsically Disordererd Proteins</a></h2>
-<p>Intrinsically disordered proteins &#40;IDPs&#41; are the proteins that do not form a well-defined tertially structure. As a model protein, we investigated p53 C-terminal domain &#40;p53 CTD&#41;. Firstly, we examined the effects of acetylation on p53 CTD&#39;s conformational ensemble via an enhanced-sampling MD simulations and circular dichroism spectrosocpy.^2^ We found that the acetylation increases the helical propensity of p53 CTD, which appeared preferable for binding to a certain proteins. Our study proposed a switching mechanism by acetylation in terms of atomistic picture. </p>
+<p>Intrinsically disordered proteins &#40;IDPs&#41; are the proteins that do not form a well-defined tertially structure. As a model protein, we investigated p53 C-terminal domain &#40;p53 CTD&#41;. Firstly, we examined the effects of acetylation on p53 CTD&#39;s conformational ensemble via an enhanced-sampling MD simulations and circular dichroism spectrosocpy.<sup id="fnref:2"><a href="#fndef:2" class="fnref">[2]</a></sup> We found that the acetylation increases the helical propensity of p53 CTD, which appeared preferable for binding to a certain proteins. Our study proposed a switching mechanism by acetylation in terms of atomistic picture. </p>
 <h2 id="references"><a href="#references" class="header-anchor">References</a></h2>
-<ol>
-<li><p><strong>S. Iida</strong>, H. K. Nakamura, T. Mashimo, Y. Fukunishi <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jpcb.0c04963">&quot;Structural Fluctuations of Aromatic Residues in an Apo-Form Reveal Cryptic Binding Sites: Implications for Fragment-based Drug Design&quot; </a><strong>2020</strong>, 124, 45, 9977–9986 <em>Journal of Physical Chemistry B</em>, DOI: 10.1021/acs.jpcb.0c04963</p>
-</li>
-<li><p><strong>S. Iida</strong>, T. Mashimo, T. Kurosawa, H. Hojo, H. Muta, Y. Goto, Y. Fukunishi, H. Nakamura, J. Higo <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/jcc.24494">&quot;Variation of Free-energy Landscape of the p53 C-terminal Domain Induced by Acetylation: Enhanced Conformational Sampling&quot; </a><strong>2016</strong> <em>Journal of Computational Chemistry</em>, 37, 2687–2700 DOI: 10.1002/jcc.24494</p>
-</li>
-</ol>
+<p><table class="fndef" id="fndef:1">
+    <tr>
+        <td class="fndef-backref"><a href="#fnref:1">[1]</a></td>
+        <td class="fndef-content"><strong>S. Iida</strong>, H. K. Nakamura, T. Mashimo, Y. Fukunishi <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jpcb.0c04963">&quot;Structural Fluctuations of Aromatic Residues in an Apo-Form Reveal Cryptic Binding Sites: Implications for Fragment-based Drug Design&quot; </a><strong>2020</strong>, 124, 45, 9977–9986 <em>Journal of Physical Chemistry B</em>, DOI: 10.1021/acs.jpcb.0c04963</td>
+    </tr>
+</table>
+ <table class="fndef" id="fndef:2">
+    <tr>
+        <td class="fndef-backref"><a href="#fnref:2">[2]</a></td>
+        <td class="fndef-content"><strong>S. Iida</strong>, T. Mashimo, T. Kurosawa, H. Hojo, H. Muta, Y. Goto, Y. Fukunishi, H. Nakamura, J. Higo <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/jcc.24494">&quot;Variation of Free-energy Landscape of the p53 C-terminal Domain Induced by Acetylation: Enhanced Conformational Sampling&quot; </a><strong>2016</strong> <em>Journal of Computational Chemistry</em>, 37, 2687–2700 DOI: 10.1002/jcc.24494</td>
+    </tr>
+</table>
+</p>
 <div class="page-foot">
   <div class="copyright">
-    &copy; Shinji Iida. Last modified: December 15, 2021. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
+    <!-- &copy; {{ fill author }}. {{isnotpage /tag/*}}Last modified: {{ fill fd_mtime }}.{{end}} -->
+    Written by Shinji Iida. Last modified: March 10, 2022
   </div>
 </div>
 </div><!-- CONTENT ENDS HERE -->
@@ -121,12 +132,13 @@
 
           <a href="https://scholar.google.co.jp/citations?user=p09KwG8AAAAJ&hl=en" rel="nofollow noopener noreferrer">
             <img src="/assets/google-scholar.png" alt="gscholar" style="width: 1vw; min-width: 10px;"> 
-            My page on Google Scholar.
+            Google Scholar.
           </a>
 
           <h>
             Email: s-iida[at]protein.osaka-u.ac.jp.
           </h>
+
 
           <a href="https://github.com/tlienart/Franklin.jl">
             Powered by 
