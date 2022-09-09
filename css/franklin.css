@@ -60,7 +60,8 @@ html {
 
 .page-foot {
   font-size: 80%;
-  font-family: Arial, serif;
+  /* font-family: Arial, serif; */
+  font-family: "Avenir Next" 
   color: #a6a2a0;
   text-align: center;
   margin-top: 6em;
@@ -83,6 +84,8 @@ html {
   padding-left: 12.5%;
   padding-right: 12.5%;
   line-height: 1.35em;
+  /* Shinji's favourite font */
+  font-family: "Avenir Next" 
 }
 
 /* On wide screens, fix content width to a max value. */
@@ -332,4 +335,66 @@ code {
   margin-bottom: 5px;
   border-radius: 0 10px 10px 0;
   border-left: 5px solid #4c9cf1;
+}
+
+/* ===============
+For admonition
+=============== */
+.admonition {
+  margin-top: 1.5em;
+  width: 100%;
+  margin-left:auto;
+  margin-right:auto;
+  background-color:  aliceblue;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+
+.admonition .note {
+
+}
+
+.admonition .note .content {
+  padding: 10px;
+  padding-left: 12px;
+}
+
+.admonition .note .title{
+  font-size: 105%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding-left: 7px;
+  padding-top: 2px;
+  color: white;
+  background: red;
+}
+
+.admonition .def .content {
+  padding: 10px;
+  padding-left: 12px;
+}
+
+.admonition .def .title{
+  font-size: 105%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding-left: 7px;
+  padding-top: 2px;
+  color: white;
+  background: orange;
+}
+
+.admonition .key .content {
+  padding: 10px;
+  padding-left: 12px;
+}
+
+.admonition .key .title{
+  font-size: 105%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding-left: 7px;
+  padding-top: 2px;
+  color: white;
+  background: cornflowerblue;
 }
